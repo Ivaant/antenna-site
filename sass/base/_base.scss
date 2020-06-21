@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1rem = 10px; 10px / 16px = 62.5%
+    // @include respond(big-desktop) {
+    //     //1rem = 12px
+    //     font-size: 75%;
+    // }
+    // @include respond(tab-land) {
+    //     //1rem = 9px
+    //     font-size: 56.25%;
+    // }
+    // @include respond(tab-port) {
+    //     //1rem = 8px; 8 / 16 = 50%
+    //     font-size: 50%;
+    // }
+    // @include respond(phone) {
+    //     //1rem = 6px; 6 / 16 = 50%
+    //     font-size: 37.5%;
+    // }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem 3rem 0 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-semi-black;
+    background-color: #eee;
+    @include respond(tab-port) {
+        //1rem = 9px
+        padding: 0;
+    }
+}
+
+::selection {
+    color: $color-white;
+    background-color: $color-primary;
+}

@@ -1,0 +1,29 @@
+.heading-primary {
+    margin-bottom: 8rem;
+    color: $color-white;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &--request {
+        display: block;
+        margin-bottom: 3rem;
+        -webkit-animation: moveInLeft 2s;
+        animation: moveInLeft 2s;
+    }
+    &--response {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 7px;
+        -webkit-animation: moveInRight 2s;
+        animation: moveInRight 2s;
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            font-size: 2rem;
+        }
+    }
+}

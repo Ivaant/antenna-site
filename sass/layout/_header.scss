@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    height: calc(100vh - 6rem);
+    padding: 1rem 2rem;
+    background-image: linear-gradient( to right bottom, rgba($color-black, .2), rgba($color-black, 0.8)), url(../img/hero-bridge.jpg);
+    background-size: cover;
+    background-position: center center;
+    &__logo-box {
+        width: 30rem;
+        //height: 3rem;
+        // margin-top: 4rem;
+        // margin-left: 4rem;
+        // background-color: $color-white;
+    }
+    &__logo {
+        width: 100%;
+    }
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        text-align: center;
+        transform: translate(-50%, -40%);
+        -webkit-transform: translate(-50%, -40%);
+        -moz-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+        -o-transform: translate(-50%, -40%);
+    }
+}
