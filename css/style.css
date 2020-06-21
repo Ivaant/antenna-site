@@ -1,0 +1,25 @@
+/** COLORS*/
+
+
+/** 
+primary-blue: #294A97
+primary-green: #8fc664
+primary-red: #91373d
+*/
+
+body {
+    background-color: #eee;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo__image {
+    width: 100%;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "antenna-site",
+  "version": "1.0.0",
+  "description": "Antenna Recruiting landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivaant/antenna-site.git"
+  },
+  "keywords": [
+    "recruiting",
+    "service",
+    "engineer",
+    "Germany",
+    "Eastern",
+    "Europe",
+    "technical",
+    "specialist"
+  ],
+  "author": "Sergiy Ivanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ivaant/antenna-site/issues"
+  },
+  "homepage": "https://github.com/Ivaant/antenna-site#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
