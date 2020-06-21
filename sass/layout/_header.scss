@@ -2,7 +2,7 @@
     position: relative;
     height: calc(100vh - 6rem);
     padding: 1rem 2rem;
-    background-image: linear-gradient( to right bottom, rgba($color-black, .2), rgba($color-black, 0.8)), url(../img/hero-bridge.jpg);
+    background-image: linear-gradient( to right bottom, rgba($color-black, .1), rgba($color-black, 0.8)), url(../img/hero-bridge.jpg);
     background-size: cover;
     background-position: center center;
     &__logo-box {
