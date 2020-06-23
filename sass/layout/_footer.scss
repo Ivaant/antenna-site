@@ -1,0 +1,43 @@
+.footer {
+    padding: 4rem 0;
+    background-color: $color-semi-black;
+    font-size: 1.4rem;
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+    .row {
+        @include respond(phone) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__logo-box {
+        width: 40rem;
+        margin: 0 auto 4rem;
+        background-color: rgba($color-white, .9);
+        border-radius: 4px;
+    }
+    &__logo-image {
+        width: 100%;
+    }
+    &__contacts,
+    &__copyright {
+        padding: 1rem;
+        border-top: 1px solid $color-secondary-light;
+        color: $color-grey-light-1;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        i {
+            margin: 2rem 1rem;
+            vertical-align: middle;
+            font-size: 3rem;
+            font-weight: bold;
+            color: $color-secondary-light;
+        }
+    }
+    &__contacts {
+        float: left;
+    }
+    &__copyright {
+        float: right;
+    }
+}

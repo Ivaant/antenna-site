@@ -5,9 +5,11 @@
     background-image: linear-gradient( to right bottom, rgba($color-black, .1), rgba($color-black, 0.8)), url(../img/hero-bridge.jpg);
     background-size: cover;
     background-position: center center;
-    //background-attachment: fixed;
     &__logo-box {
         width: 30rem;
+        margin: 2rem 1.5rem;
+        background-color: rgba($color-white, .9);
+        border-radius: 4px;
     }
     &__logo {
         width: 100%;
