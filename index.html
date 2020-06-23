@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span> About Us</a></li>
+                <li class="navigation__item"><a href="#section-steps" class="navigation__link"><span>02</span>How it works</a></li>
+                <li class="navigation__item"><a href="#section-submit-job" class="navigation__link"><span>03</span>Submit vacancy</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link"><span>04</span>Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="./img/logo-big.png" alt="Antenna Recruiting logo" class="header__logo">
@@ -21,13 +37,13 @@
                 <span class="heading-primary--request">You have engineer position open for &ctdot; months?</span>
                 <span class="heading-primary--response">We bridge this gap in Western Europe</span>
             </h2>
-            <a href="#" class="btn btn--white btn--animated">Submit vacancy</a>
-            <a href="#" class="btn btn--white-outline btn--animated">Show me more</a>
+            <a href="#section-submit-job" class="btn btn--white btn--animated">Submit vacancy</a>
+            <a href="#section-about" class="btn btn--white-outline btn--animated">Show me more</a>
         </div>
     </header>
 
     <main>
-        <section class="section-features">
+        <section class="section-about" id="section-about">
             <div class="row">
                 <div class="u-center-text u-margin-bottom-big">
                     <h1 class="heading-secondary">
@@ -208,7 +224,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <figure class="footer__logo-box">
             <img src="img/logo-big.png" alt="footer logo" class="footer__logo-image">
         </figure>
@@ -287,6 +303,7 @@
             </div>
         </div>
     </section> -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
