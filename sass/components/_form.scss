@@ -1,0 +1,81 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 1.2rem;
+    }
+    &__input {
+        display: block;
+        width: 85%;
+        color: inherit;
+        font-size: $default-font-size;
+        font-family: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: solid 4px transparent;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transition: all .3s;
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 2rem 3rem rgba($color-black, .3);
+            border-bottom: solid 4px $color-primary;
+        }
+        &:focus:invalid {
+            border-bottom: solid 4px $color-tertiary;
+        }
+    }
+    &__label {
+        display: block;
+        margin-top: .7rem;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        transition: all .3s;
+    }
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    &__file-group {
+        display: inline-block;
+        width: 49%;
+    }
+    &__file-input {
+        display: none;
+    }
+    &__textarea-checkbox {
+        display: none;
+    }
+    &__textarea {
+        position: absolute;
+        top: 0;
+        right: -4rem;
+        width: 50%;
+        height: 80%;
+        color: inherit;
+        font-size: $default-font-size;
+        font-family: inherit;
+        line-height: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        resize: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        background-color: rgba($color-white, .9);
+        visibility: hidden;
+        &::placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+    &__textarea-checkbox:checked~&__group>&__textarea {
+        visibility: visible;
+    }
+}

@@ -156,7 +156,7 @@ body {
     content: "";
     height: 2px;
     width: 30%;
-    margin: 3rem auto 0;
+    margin: 1rem auto 0;
     background-image: linear-gradient(to right, #8fc664, #6da83e); }
   .heading-secondary:hover {
     transform: skewY(-2deg) skewX(-15deg) scale(1.1);
@@ -177,7 +177,7 @@ body {
 .btn, .btn:link, .btn:visited {
   position: relative;
   display: inline-block;
-  padding: 10px 40px;
+  padding: 1rem 4rem;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
@@ -198,19 +198,44 @@ body {
 .btn:not(:last-child) {
   margin-right: 5rem; }
 
-.btn--white:link, .btn--white:visited {
+.btn--white, .btn--white:link, .btn--white:visited {
   border: solid 1px #efefef;
   color: #6da83e;
   background-color: #efefef; }
-  .btn--white:link::after, .btn--white:visited::after {
+  .btn--white::after, .btn--white:link::after, .btn--white:visited::after {
     background-color: #efefef; }
 
-.btn--outline:link, .btn--outline:visited {
+.btn--white:active {
+  color: #efefef;
+  background-color: transparent; }
+
+.btn--white-outline, .btn--white-outline:link, .btn--white-outline:visited {
   border: solid 1px #efefef;
   color: #aad489;
   background-color: transparent; }
-  .btn--outline:link::after, .btn--outline:visited::after {
+  .btn--white-outline::after, .btn--white-outline:link::after, .btn--white-outline:visited::after {
     background-color: transparent; }
+
+.btn--white-outline:active {
+  color: #026089;
+  background-color: #efefef; }
+
+.btn--blue, .btn--blue:link, .btn--blue:visited {
+  color: #efefef;
+  background-color: #026089; }
+  .btn--blue::after, .btn--blue:link::after, .btn--blue:visited::after {
+    background-color: #026089; }
+
+.btn--blue-outline, .btn--blue-outline:link, .btn--blue-outline:visited {
+  border: solid 1px #026089;
+  color: #026089;
+  background-color: transparent; }
+  .btn--blue-outline::after, .btn--blue-outline:link::after, .btn--blue-outline:visited::after {
+    background-color: transparent; }
+
+.btn--small, .btn--small:link, .btn--small:visited {
+  padding: .8rem 3rem;
+  font-size: 1.3rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -227,8 +252,11 @@ body {
     -ms-transform: scaleX(1.5) scaleY(1.6);
     -o-transform: scaleX(1.5) scaleY(1.6); }
 
-.btn--outline:hover::after {
+.btn--white-outline:hover::after {
   background-color: #efefef; }
+
+.btn--blue-outline:hover::after {
+  background-color: #026089; }
 
 .btn:active, .btn:focus {
   outline: none;
@@ -256,18 +284,23 @@ body {
   -webkit-animation: moveInBottom .5s ease-out .5s;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
+.btn--submit {
+  color: #6da83e;
+  font-weight: 500; }
+
+.btn-text, .btn-text:link, .btn-text:visited {
   display: inline-block;
   border-bottom: 1px solid #294A97;
+  border-radius: 3px;
   padding: 3px;
   text-decoration: none;
   font-size: 1.8rem;
-  color: #294A97;
+  color: #026089;
   transition: all .1s ease-in; }
 
 .btn-text:hover {
-  background-color: #294A97;
-  color: #777;
+  background-color: #026089;
+  color: #efefef;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(-2px); }
 
@@ -370,6 +403,82 @@ body {
   letter-spacing: 1px;
   font-size: 1.8rem; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 1.2rem; }
+
+.form__input {
+  display: block;
+  width: 85%;
+  color: inherit;
+  font-size: 1.8rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(239, 239, 239, 0.5);
+  border: none;
+  border-bottom: solid 4px transparent;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transition: all .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      /*900px*/
+      width: 100%; } }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+    border-bottom: solid 4px #294A97; }
+  .form__input:focus:invalid {
+    border-bottom: solid 4px #91373d; }
+
+.form__label {
+  display: block;
+  margin-top: .7rem;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__file-group {
+  display: inline-block;
+  width: 49%; }
+
+.form__file-input {
+  display: none; }
+
+.form__textarea-checkbox {
+  display: none; }
+
+.form__textarea {
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  width: 50%;
+  height: 80%;
+  color: inherit;
+  font-size: 1.8rem;
+  font-family: inherit;
+  line-height: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  resize: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(239, 239, 239, 0.9);
+  visibility: hidden; }
+  .form__textarea::placeholder {
+    color: #999; }
+
+.form__textarea-checkbox:checked ~ .form__group > .form__textarea {
+  visibility: visible; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -395,6 +504,7 @@ body {
       margin-bottom: 1rem !important; } }
 
 .row {
+  position: relative;
   max-width: 114rem;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
@@ -474,4 +584,35 @@ body {
   padding: 10rem 0; }
 
 .section-steps {
-  padding-bottom: 10rem; }
+  padding-bottom: 2rem; }
+
+.section-submit-job {
+  height: 100vh;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, #5792b1, #026089); }
+  @media only screen and (max-width: 56.25em) {
+    .section-submit-job {
+      /*900px*/
+      padding: 10rem 0; } }
+
+.submit-job {
+  height: 75vh;
+  padding: 3rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.9) 50%, transparent 50%), url(../img/golden-gate-bridge.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 56.25em) {
+    .submit-job {
+      /*900px*/
+      background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.9) 75%, transparent 75%), url(../img/golden-gate-bridge.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .submit-job {
+      background-image: linear-gradient(to right, rgba(239, 239, 239, 0.9), rgba(239, 239, 239, 0.9)), url(../img/golden-gate-bridge.jpg); } }
+  .submit-job__form {
+    width: 95%; }
+    @media only screen and (max-width: 56.25em) {
+      .submit-job__form {
+        /*900px*/
+        width: 100%; } }
