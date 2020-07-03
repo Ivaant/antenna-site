@@ -45,10 +45,14 @@
     }
     &__file-group {
         display: inline-block;
-        width: 49%;
+        width: 40%;
     }
     &__file-input {
         display: none;
+    }
+    &__text {
+        margin-right: 40px;
+        font-weight: 400;
     }
     &__textarea-checkbox {
         display: none;

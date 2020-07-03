@@ -447,10 +447,14 @@ body {
 
 .form__file-group {
   display: inline-block;
-  width: 49%; }
+  width: 40%; }
 
 .form__file-input {
   display: none; }
+
+.form__text {
+  margin-right: 40px;
+  font-weight: 400; }
 
 .form__textarea-checkbox {
   display: none; }
