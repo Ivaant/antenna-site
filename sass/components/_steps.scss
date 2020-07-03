@@ -14,6 +14,7 @@
     }
     &__item {
         margin-bottom: 3rem;
+        @include clearfix;
     }
     &__item-number {
         float: left;
@@ -35,7 +36,9 @@
     }
     &__item-text {
         padding-left: 6rem;
+        vertical-align: middle;
         letter-spacing: 1px;
         font-size: $default-font-size;
+        text-align: justify;
     }
 }

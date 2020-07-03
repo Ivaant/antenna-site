@@ -379,6 +379,10 @@ body {
 
 .steps__item {
   margin-bottom: 3rem; }
+  .steps__item::after {
+    content: "";
+    clear: both;
+    display: table; }
 
 .steps__item-number {
   float: left;
@@ -400,8 +404,10 @@ body {
 
 .steps__item-text {
   padding-left: 6rem;
+  vertical-align: middle;
   letter-spacing: 1px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  text-align: justify; }
 
 .form__group:not(:last-child) {
   margin-bottom: 1.2rem; }
