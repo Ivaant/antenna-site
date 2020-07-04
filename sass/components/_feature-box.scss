@@ -8,6 +8,7 @@
     letter-spacing: .1rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    opacity: 0;
     transition: all .2s;
     &__icon {
         display: inline-block;
@@ -27,5 +28,11 @@
     &:hover {
         transform: scale(1.05) translateY(-1.5rem);
         box-shadow: 0 3rem 6rem rgba($color-black, .3);
+    }
+    &--animated {
+        opacity: 1;
+        animation: moveInBottom .5s ease-out .5s;
+        -webkit-animation: moveInBottom .5s ease-out .5s;
+        animation-fill-mode: backwards;
     }
 }

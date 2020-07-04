@@ -5,6 +5,13 @@
         border-radius: 4px;
         overflow: hidden;
         text-align: right;
+        opacity: 0;
+        &--animated {
+            opacity: 1;
+            animation: moveInBottom .5s ease-out .5s;
+            -webkit-animation: moveInBottom .5s ease-out .5s;
+            animation-fill-mode: backwards;
+        }
     }
     &__image {
         width: 100%;

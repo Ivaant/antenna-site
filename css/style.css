@@ -320,6 +320,7 @@ body {
   letter-spacing: .1rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  opacity: 0;
   transition: all .2s; }
   .feature-box__icon {
     display: inline-block;
@@ -337,6 +338,11 @@ body {
   .feature-box:hover {
     transform: scale(1.05) translateY(-1.5rem);
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3); }
+  .feature-box--animated {
+    opacity: 1;
+    animation: moveInBottom .5s ease-out .5s;
+    -webkit-animation: moveInBottom .5s ease-out .5s;
+    animation-fill-mode: backwards; }
 
 .people {
   width: 100%; }
@@ -371,7 +377,13 @@ body {
   margin-right: 3%;
   border-radius: 4px;
   overflow: hidden;
-  text-align: right; }
+  text-align: right;
+  opacity: 0; }
+  .steps__image-box--animated {
+    opacity: 1;
+    animation: moveInBottom .5s ease-out .5s;
+    -webkit-animation: moveInBottom .5s ease-out .5s;
+    animation-fill-mode: backwards; }
 
 .steps__image {
   width: 100%; }
