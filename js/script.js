@@ -1,7 +1,7 @@
 window.onload = function() {
     //NAVIGATION HIDING AFTER CLICK
-    const navCheckbox = document.querySelector(".navigation__checkbox");
-    const navList = document.querySelector(".navigation__list");
+    var navCheckbox = document.querySelector(".navigation__checkbox");
+    var navList = document.querySelector(".navigation__list");
 
     navList.addEventListener("click", function(event) {
         navCheckbox.checked = false;
@@ -13,7 +13,7 @@ window.onload = function() {
     var waypoint1 = new Waypoint({
         element: document.querySelector(".section-about"),
         handler: function(direction) {
-            Array.from(document.querySelectorAll(".feature-box")).forEach(elem => {
+            Array.from(document.querySelectorAll(".feature-box")).forEach(function(elem) {
                 elem.classList.add("feature-box--animated");
             });
         }
