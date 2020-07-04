@@ -2,12 +2,12 @@
     position: relative;
     height: calc(100vh - 6rem);
     padding: 1rem 2rem;
-    background-image: linear-gradient( to right bottom, rgba($color-black, .1), rgba($color-black, 0.8)), url(../img/hero-bridge.jpg);
+    background-image: linear-gradient(rgba($color-black, .1), rgba($color-black, 0.7)), url(../img/hero-antenna-single.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     &__logo-box {
         width: 30rem;
-        margin: 2rem 1.5rem;
+        margin: 1.5rem 1rem;
         background-color: rgba($color-white, .9);
         border-radius: 4px;
     }

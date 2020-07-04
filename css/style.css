@@ -1,4 +1,6 @@
 /** COLORS*/
+/*$color-background-light: #5792b1;
+$color-background-dark: #026089;*/
 /*
 0 - 600px -> Phone
 601px - 900px -> Tablet portrait
@@ -217,18 +219,18 @@ body {
     background-color: transparent; }
 
 .btn--white-outline:active {
-  color: #026089;
+  color: #023667;
   background-color: #efefef; }
 
 .btn--blue, .btn--blue:link, .btn--blue:visited {
   color: #efefef;
-  background-color: #026089; }
+  background-color: #023667; }
   .btn--blue::after, .btn--blue:link::after, .btn--blue:visited::after {
-    background-color: #026089; }
+    background-color: #023667; }
 
 .btn--blue-outline, .btn--blue-outline:link, .btn--blue-outline:visited {
-  border: solid 1px #026089;
-  color: #026089;
+  border: solid 1px #023667;
+  color: #023667;
   background-color: transparent; }
   .btn--blue-outline::after, .btn--blue-outline:link::after, .btn--blue-outline:visited::after {
     background-color: transparent; }
@@ -256,7 +258,7 @@ body {
   background-color: #efefef; }
 
 .btn--blue-outline:hover::after {
-  background-color: #026089; }
+  background-color: #023667; }
 
 .btn:active, .btn:focus {
   outline: none;
@@ -295,11 +297,11 @@ body {
   padding: 3px;
   text-decoration: none;
   font-size: 1.8rem;
-  color: #026089;
+  color: #023667;
   transition: all .1s ease-in; }
 
 .btn-text:hover {
-  background-color: #026089;
+  background-color: #023667;
   color: #efefef;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(-2px); }
@@ -311,7 +313,7 @@ body {
 .feature-box {
   height: 50rem;
   padding: 2.5rem;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), linear-gradient(#5792b1, #026089);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), linear-gradient(#0074b4, #023667);
   font-size: 1.8rem;
   color: #efefef;
   text-align: center;
@@ -482,9 +484,14 @@ body {
   resize: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   background-color: rgba(239, 239, 239, 0.9);
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all .3s; }
   .form__textarea::placeholder {
     color: #999; }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+    border-bottom: solid 4px #294A97; }
 
 .form__textarea-checkbox:checked ~ .form__group > .form__textarea {
   visibility: visible; }
@@ -546,7 +553,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   z-index: 1000;
-  background-image: radial-gradient(rgba(87, 146, 177, 0.98), rgba(2, 96, 137, 0.98));
+  background-image: radial-gradient(#0074b4, #023667);
   transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
@@ -685,12 +692,12 @@ body {
   position: relative;
   height: calc(100vh - 6rem);
   padding: 1rem 2rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/hero-bridge.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/hero-antenna-single.jpg);
   background-size: cover;
-  background-position: center center; }
+  background-position: bottom center; }
   .header__logo-box {
     width: 30rem;
-    margin: 2rem 1.5rem;
+    margin: 1.5rem 1rem;
     background-color: rgba(239, 239, 239, 0.9);
     border-radius: 4px; }
   .header__logo {
@@ -761,7 +768,7 @@ body {
 .section-submit-job {
   height: 100vh;
   padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, #5792b1, #026089); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), linear-gradient(to right bottom, #0074b4, #023667); }
   @media only screen and (max-width: 56.25em) {
     .section-submit-job {
       /*900px*/

@@ -19,7 +19,7 @@
 .section-submit-job {
     height: 100vh;
     padding: 10rem 0;
-    background-image: linear-gradient( to right bottom, $color-background-light, $color-background-dark);
+    background-image: linear-gradient(to right bottom, rgba($color-black, .1), rgba($color-black, 0.4)), linear-gradient( to right bottom, $color-background-light, $color-background-dark);
     @include respond(tab-port) {
         padding: 10rem 0;
     }

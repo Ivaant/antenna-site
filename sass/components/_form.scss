@@ -75,8 +75,14 @@
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         background-color: rgba($color-white, .9);
         visibility: hidden;
+        transition: all .3s;
         &::placeholder {
             color: $color-grey-dark-2;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 2rem 3rem rgba($color-black, .3);
+            border-bottom: solid 4px $color-primary;
         }
     }
     &__textarea-checkbox:checked~&__group>&__textarea {
