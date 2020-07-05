@@ -27,4 +27,10 @@ window.onload = function() {
         },
         offset: '150px;'
     });
+
+    //SEND FORM DATA via EMAILJS
+    var form = doucment.querySelector(".form");
+    form.addEventListener("submit", function(event) {
+
+    })
 }
