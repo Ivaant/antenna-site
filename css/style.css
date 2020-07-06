@@ -97,7 +97,7 @@ body {
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #333;
+  color: #555;
   background-color: #eee; }
   @media only screen and (max-width: 56.25em) {
     body {
@@ -311,9 +311,9 @@ body {
   transform: translateY(-1px); }
 
 .feature-box {
-  height: 50rem;
+  height: 45rem;
   padding: 2.5rem;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), linear-gradient(#0074b4, #023667);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), linear-gradient(#0074b4, #023667);
   font-size: 1.8rem;
   color: #efefef;
   text-align: center;
@@ -358,6 +358,7 @@ body {
     float: left;
     width: 33.3333333%; }
   .people__list-item-figure {
+    position: relative;
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -371,6 +372,22 @@ body {
     .people__image:hover {
       opacity: 1;
       transform: scale(1.035); }
+  .people__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #efefef;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: all .5s; }
+  .people__list-item:hover .people__caption {
+    top: 100%;
+    opacity: 0; }
 
 .steps__image-box {
   width: 100%;
@@ -385,8 +402,13 @@ body {
     -webkit-animation: moveInBottom .5s ease-out .5s;
     animation-fill-mode: backwards; }
 
-.steps__image {
-  width: 100%; }
+.steps__image-box {
+  height: 70vh;
+  width: 100%;
+  background-image: url(../img/how-it-works-antenna.jpg);
+  background-size: cover;
+  background-position: top;
+  background-size: 125%; }
 
 .steps__list {
   margin: 0 0 5rem 3%; }
@@ -412,9 +434,7 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, #8fc664, #6da83e);
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%); }
+  background-clip: text; }
 
 .steps__item-text {
   padding-left: 6rem;
@@ -633,7 +653,7 @@ body {
     display: inline-block;
     width: 3rem;
     height: 2px;
-    background-color: #333;
+    background-color: #555;
     transition: all .3s; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
@@ -708,13 +728,13 @@ body {
   position: relative;
   height: calc(100vh - 6rem);
   padding: 1rem 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
   background-size: cover;
   background-position: bottom center; }
   .header__logo-box {
     width: 30rem;
     margin: 1.5rem 1rem;
-    background-color: rgba(239, 239, 239, 0.9);
+    background-color: rgba(239, 239, 239, 0.2);
     border-radius: 4px; }
   .header__logo {
     width: 100%; }
@@ -732,7 +752,7 @@ body {
 
 .footer {
   padding: 4rem 0;
-  background-color: #333;
+  background-color: #555;
   font-size: 1.4rem; }
   @media only screen and (max-width: 56.25em) {
     .footer {
@@ -744,7 +764,7 @@ body {
   .footer__logo-box {
     width: 40rem;
     margin: 0 auto 4rem;
-    background-color: rgba(239, 239, 239, 0.9);
+    background-color: rgba(239, 239, 239, 0.2);
     border-radius: 4px; }
   .footer__logo-image {
     width: 100%; }

@@ -11,6 +11,7 @@
         width: 33.3333333%;
     }
     &__list-item-figure {
+        position: relative;
         width: 100%;
         margin: 0;
         overflow: hidden;
@@ -26,5 +27,23 @@
             opacity: 1;
             transform: scale(1.035);
         }
+    }
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        opacity: 1;
+        transition: all .5s;
+    }
+    &__list-item:hover &__caption {
+        top: 100%;
+        opacity: 0;
     }
 }
