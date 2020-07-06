@@ -476,6 +476,10 @@ body {
   margin-right: 40px;
   font-weight: 400; }
 
+.form__file-name {
+  padding: 1rem 3rem;
+  font-weight: 400; }
+
 .form__textarea-checkbox {
   display: none; }
 
@@ -704,7 +708,7 @@ body {
   position: relative;
   height: calc(100vh - 6rem);
   padding: 1rem 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/hero-antenna-single.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
   background-size: cover;
   background-position: bottom center; }
   .header__logo-box {

@@ -28,6 +28,18 @@ window.onload = function() {
         offset: '150px;'
     });
 
+    //SHOW SELECTED FILENAME BELOW THE UPLOAD FILE BTN
+    var fileInput = document.querySelector(".form__file-input");
+    var filenameLabel = document.querySelector(".form__file-name");
+    fileInput.addEventListener("change", function(event) {
+        if (fileInput.files.length > 0) {
+            var filename = fileInput.files[0].name;
+            if (filename.length > 40) filename = "..." + filename.slice(-40);
+            filenameLabel.textContent = ".../" + filename;
+        } else filenameLabel.textContent = "";
+    });
+
+
     //SEND FORM DATA via SMTPJS.COM
     var form = document.querySelector(".form");
     form.addEventListener("submit", function(event) {
