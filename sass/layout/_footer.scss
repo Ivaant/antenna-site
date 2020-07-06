@@ -19,6 +19,17 @@
     &__logo-image {
         width: 100%;
     }
+    &__mailto {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-white;
+        }
+        &:hover,
+        &:active {
+            color: $color-secondary;
+        }
+    }
     &__contacts,
     &__copyright {
         padding: 1rem;

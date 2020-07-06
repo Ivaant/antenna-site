@@ -52,6 +52,11 @@ window.onload = function() {
                 file = elem.files[0];
             }
         });
+        //clear form fields
+        Array.from(form.elements).forEach(function(elem) {
+            elem.value = "";
+        });
+        filenameLabel.textContent = "";
         //prepare email content
         var emailSubject = data.name + " from " + data.company;
         var emailBody = "<html><h3>Name: " +
@@ -68,24 +73,41 @@ window.onload = function() {
             readFileData(file)
                 .then(function(result) {
                     Email.send({
-                        SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
-                        To: 'what.s.web4you@gmail.com',
-                        From: data.email,
-                        Subject: emailSubject,
-                        Body: emailBody,
-                        Attachments: [{
-                            name: file.name,
-                            data: result
-                        }]
-                    });
+                            SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
+                            To: 'what.s.web4you@gmail.com',
+                            From: data.email,
+                            Subject: emailSubject,
+                            Body: emailBody,
+                            Attachments: [{
+                                name: file.name,
+                                data: result
+                            }]
+                        }).then(function(message) {
+                            if (message === "OK") {
+                                window.location.hash = "#popup";
+                            } else window.location.hash = "#popup-failure";
+                        })
+                        .catch(function(error) {
+                            console.log(error);
+                        });
+                })
+                .catch(function(error) {
+                    console.log(error);
                 });
         } else Email.send({
-            SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
-            To: 'what.s.web4you@gmail.com',
-            From: data.email,
-            Subject: emailSubject,
-            Body: emailBody
-        });
+                SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
+                To: 'what.s.web4you@gmail.com',
+                From: data.email,
+                Subject: emailSubject,
+                Body: emailBody
+            }).then(function(message) {
+                if (message === "OK") {
+                    window.location.hash = "#popup";
+                } else window.location.hash = "#popup-failure";
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
         event.preventDefault();
     });
 }
@@ -98,3 +120,19 @@ function readFileData(file) {
         reader.readAsDataURL(file);
     });
 }
+
+//close popup with side click
+var popupElem = document.querySelector(".popup");
+popupElem.addEventListener("click", function(event) {
+    if (event.target.matches(".popup")) {
+        window.location.hash = "#";
+    }
+});
+
+//close popup-failure with side click
+var popupFailElem = document.querySelector(".popup-failure");
+popupFailElem.addEventListener("click", function(event) {
+    if (event.target.matches(".popup-failure")) {
+        window.location.hash = "#section-submit-job";
+    }
+});
