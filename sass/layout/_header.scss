@@ -2,7 +2,7 @@
     position: relative;
     height: calc(100vh - 6rem);
     padding: 1rem 2rem;
-    background-image: linear-gradient(rgba($color-black, .1), rgba($color-black, 0.7)), url(../img/hero-antenna-single.jpg);
+    background-image: linear-gradient(rgba($color-black, .1), rgba($color-black, 0.3)), url(../img/hero-antenna-single.jpg);
     background-size: cover;
     background-position: bottom center;
     &__logo-box {

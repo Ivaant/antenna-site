@@ -182,17 +182,17 @@
                             <div class="row">
                                 <div class="col-1-of-2">
                                     <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                        <input type="text" class="form__input" placeholder="Full name" name="name" id="name" required>
                                         <label for="name" class="form__label">Full name</label>
                                     </div>
 
                                     <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Company name" id="company-name" required>
+                                        <input type="text" class="form__input" placeholder="Company name" name="company" id="company-name" required>
                                         <label for="company-name" class="form__label">Company name</label>
                                     </div>
 
                                     <div class="form__group">
-                                        <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                        <input type="email" class="form__input" placeholder="Email" name="email" id="email" required>
                                         <label for="email" class="form__label">Email</label>
                                     </div>
                                     <div class="form__group u-margin-bottom-medium">
@@ -206,13 +206,14 @@
 
                                         <div class="form__file-group">
 
-                                            <input type="checkbox" class="form__textarea-checkbox" id="textarea-checkbox">
+                                            <input type="checkbox" class="form__textarea-checkbox" name="textarea-checkbox" id="textarea-checkbox">
                                             <label for="textarea-checkbox" class="form__checkbox-label btn-text">
                                                 Put description &rarr;</label>
                                             <div class="form__group">
                                                 <textarea name="jobdesc" cols="30" rows="20" class="form__textarea" placeholder="Put down a job description here..."></textarea>
                                             </div>
                                         </div>
+                                        <div class="form__file-name"></div>
                                     </div>
                                     <div class="form__group">
                                         <button class="btn btn--blue-outline btn--submit" type="submit">Submit &uarr;</button>
