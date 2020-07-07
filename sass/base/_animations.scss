@@ -68,3 +68,18 @@
         -o-transform: translate(0);
     }
 }
+
+@keyframes wifiPulse {
+    0% {
+        opacity: 0.3;
+    }
+    33% {
+        opacity: 0.6;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
