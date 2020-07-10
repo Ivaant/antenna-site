@@ -5,6 +5,9 @@
     background-image: linear-gradient(rgba($color-black, .2), rgba($color-black, 0.3)), url(../img/hero-antenna-single.jpg);
     background-size: cover;
     background-position: bottom center;
+    @include respond(tab-port) {
+        height: 100vh;
+    }
     &__logo-box {
         width: 30rem;
         margin: 1.5rem 1rem;
@@ -16,7 +19,7 @@
     }
     &__text-box {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         width: 70%;
         text-align: center;

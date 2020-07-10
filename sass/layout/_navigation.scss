@@ -31,10 +31,7 @@
         top: 6.5rem;
         right: 6.5rem;
         z-index: 1000;
-        //transform: scale(40);
         background-image: radial-gradient($color-background-light, $color-background-dark);
-        //background-size: 100%;
-        //background-position: bottom right;
         transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
         @include respond(tab-port) {
             top: 4.5rem;
@@ -116,24 +113,24 @@
             top: -2.6rem;
         }
         &::after {
-            top: -3.5rem;
+            top: -2.8rem;
         }
     }
     &__button:hover &__icon::before {
         top: -2.8rem;
     }
     &__button:hover &__icon::after {
-        top: -3.3rem;
+        top: -2.6rem;
     }
     &__checkbox:checked+&__button>&__icon {
         background-color: transparent;
     }
     &__checkbox:checked+&__button>&__icon::before {
-        top: -1.8rem;
+        top: -1.7rem;
         transform: rotate(135deg) //translate(.5rem, 1rem);
     }
     &__checkbox:checked+&__button>&__icon::after {
-        top: -4.5rem;
+        top: -4rem;
         transform: rotate(-135deg) //translate(.5rem, -1rem);
     }
 }

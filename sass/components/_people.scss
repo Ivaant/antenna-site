@@ -9,6 +9,11 @@
     &__list-item {
         float: left;
         width: 33.3333333%;
+        @include respond(small-phone) {
+            float: none;
+            display: block;
+            width: 100%;
+        }
     }
     &__list-item-figure {
         position: relative;

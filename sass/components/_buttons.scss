@@ -24,6 +24,9 @@
     }
     &:not(:last-child) {
         margin-right: 5rem;
+        @include respond(small-phone) {
+            margin: 5rem;
+        }
     }
     &--white,
     &--white:link,

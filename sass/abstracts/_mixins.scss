@@ -16,8 +16,8 @@
 //MEDIA QUERY MANAGER
 
 /*
-0 - 600px -> Phone
-601px - 900px -> Tablet portrait
+  0 - 440px --> small-phone
+441px - 600px -> Phone
 601px - 900px -> Tablet portrait
 901px - 1200px -> Tablet landscape
 1201px - 1800px -> Desktop - base style apply
@@ -57,6 +57,12 @@ base + typography > layout + grid > pages + components
     @if $breakpoint==phone {
         @media only screen and (max-width: 37.5em) {
             //600px 
+            @content
+        }
+    }
+    @if $breakpoint==small-phone {
+        @media only screen and (max-width: 30em) {
+            //440px 
             @content
         }
     }

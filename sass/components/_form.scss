@@ -1,4 +1,14 @@
 .form {
+    &__heading {
+        @include respond(tab-land) {
+            text-align: center;
+        }
+    }
+    &__group {
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    }
     &__group:not(:last-child) {
         margin-bottom: 1.2rem;
     }
@@ -46,6 +56,10 @@
     &__file-group {
         display: inline-block;
         width: 40%;
+        @include respond(tab-port) {
+            display: block;
+            width: 100%;
+        }
     }
     &__file-input {
         display: none;
@@ -53,6 +67,11 @@
     &__text {
         margin-right: 40px;
         font-weight: 400;
+        @include respond(tab-port) {
+            display: block;
+            width: 100%;
+            margin: 2rem auto;
+        }
     }
     &__file-name {
         padding: 1rem 3rem;
@@ -78,8 +97,14 @@
         resize: none;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         background-color: rgba($color-white, .9);
-        visibility: hidden;
         transition: all .3s;
+        display: none;
+        @include respond(tab-port) {
+            position: static;
+            width: 100%;
+            height: 30rem;
+            margin-top: 3rem;
+        }
         &::placeholder {
             color: $color-grey-dark-2;
         }
@@ -89,7 +114,7 @@
             border-bottom: solid 4px $color-primary;
         }
     }
-    &__textarea-checkbox:checked~&__group>&__textarea {
-        visibility: visible;
+    &__textarea-checkbox:checked~&__textarea {
+        display: block;
     }
 }

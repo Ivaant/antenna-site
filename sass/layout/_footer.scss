@@ -37,6 +37,9 @@
         color: $color-grey-light-1;
         letter-spacing: 1px;
         line-height: 3rem;
+        @include respond(tab-port) {
+            text-align: center;
+        }
         i {
             margin: 2rem 1rem;
             vertical-align: middle;
@@ -47,8 +50,14 @@
     }
     &__contacts {
         float: left;
+        @include respond(tab-port) {
+            float: none;
+        }
     }
     &__copyright {
         float: right;
+        @include respond(tab-port) {
+            float: none;
+        }
     }
 }

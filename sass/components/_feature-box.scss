@@ -10,6 +10,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     opacity: 0;
     transition: all .2s;
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+        height: 40rem;
+    }
     &__icon {
         display: inline-block;
         color: transparent;
