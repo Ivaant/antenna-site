@@ -33,7 +33,7 @@
         background-image: url(../img/logo-big.png), linear-gradient(rgba($color-white, .8), rgba($color-white, .7));
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: center;
         transform: translate(-50%, -50%), scale(0);
         opacity: 0;
         transition: all .5s .2s;
