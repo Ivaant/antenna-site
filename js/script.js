@@ -153,3 +153,20 @@ popupFailElem.addEventListener("click", function(event) {
         window.location.hash = "#section-submit-job";
     }
 });
+
+//FOOTER PHONE NUMBER COPY TO CLIPBOARD ON CLICK
+var linkElems = document.querySelectorAll(".footer__link");
+console.log(linkElems);
+Array.from(linkElems).forEach(function(elem) {
+    elem.addEventListener("click", function(event) {
+        var textElem = document.createElement('textarea');
+        textElem.value = event.target.textContent;
+        textElem.setAttribute('readonly', '');
+        textElem.style.position = 'absolute';
+        textElem.style.left = '-9999px';
+        document.body.appendChild(textElem);
+        textElem.select();
+        document.execCommand('copy');
+        document.body.removeChild(textElem);
+    });
+});
