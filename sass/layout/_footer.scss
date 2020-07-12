@@ -48,6 +48,7 @@
         }
     }
     &__contacts {
+        position: relative;
         float: left;
         text-align: left;
         padding-left: 0;
@@ -66,7 +67,7 @@
             position: absolute;
             z-index: 300;
             top: 1rem;
-            left: 19rem;
+            right: -2rem;
             width: 114px;
             height: 36px;
             color: #fff;
