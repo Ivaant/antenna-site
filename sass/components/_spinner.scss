@@ -55,7 +55,9 @@
     &__circle-container {
         width: 5rem;
         height: 5rem;
-        position: relative;
+        position: absolute;
+        top: -1.5rem;
+        right: 2rem;
     }
     &__circle {
         @include center-box;

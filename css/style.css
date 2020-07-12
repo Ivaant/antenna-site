@@ -133,8 +133,8 @@ body {
 
 .heading-primary {
   margin-bottom: 8rem;
-  color: #efefef;
-  font-size: 5rem;
+  color: #6da83e;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 1rem;
   text-align: center;
@@ -143,7 +143,7 @@ body {
   backface-visibility: hidden; }
   .heading-primary--request {
     display: block;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     -webkit-animation: moveInLeft 2s;
     animation: moveInLeft 2s; }
     @media only screen and (max-width: 75em) {
@@ -155,9 +155,11 @@ body {
         font-size: 3rem; } }
   .heading-primary--response {
     display: block;
+    position: relative;
+    color: #012959;
     font-size: 4rem;
     font-weight: 500;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     -webkit-animation: moveInRight 2s;
     animation: moveInRight 2s; }
     @media only screen and (max-width: 75em) {
@@ -363,7 +365,7 @@ body {
   transform: translateY(-1px); }
 
 .feature-box {
-  height: 50rem;
+  height: 37rem;
   padding: 2.5rem;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), linear-gradient(#0074b4, #023667);
   font-size: 1.8rem;
@@ -800,7 +802,9 @@ body {
 .spinner__circle-container {
   width: 5rem;
   height: 5rem;
-  position: relative; }
+  position: absolute;
+  top: -1.5rem;
+  right: 2rem; }
 
 .spinner__circle {
   position: absolute;
@@ -1021,7 +1025,7 @@ body {
   position: relative;
   height: calc(100vh - 6rem);
   padding: 1rem 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
+  background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.7) 55%, transparent 50%), linear-gradient(105deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
   background-size: cover;
   background-position: bottom center; }
   @media only screen and (max-width: 56.25em) {
@@ -1031,21 +1035,13 @@ body {
   .header__logo-box {
     width: 30rem;
     margin: 1.5rem 1rem;
-    background-color: rgba(239, 239, 239, 0.2);
-    border-radius: 4px; }
+    border-radius: 4px;
+    clear: both; }
   .header__logo {
     width: 100%; }
   .header__text-box {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    width: 70%;
-    text-align: center;
-    transform: translate(-50%, -40%);
-    -webkit-transform: translate(-50%, -40%);
-    -moz-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    -o-transform: translate(-50%, -40%); }
+    margin-top: 9rem;
+    text-align: center; }
 
 .footer {
   padding: 4rem 0;
@@ -1100,7 +1096,7 @@ body {
         float: none; } }
 
 .section-about {
-  padding: 10rem 0; }
+  padding: 6rem 0; }
 
 .section-people {
   padding: 10rem 0; }
