@@ -364,7 +364,7 @@ body {
 .feature-box {
   height: 37rem;
   padding: 2.5rem;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), linear-gradient(#0074b4, #023667);
+  background-image: linear-gradient(#0074b4, #1e366f);
   font-size: 1.8rem;
   color: #efefef;
   text-align: center;
@@ -466,7 +466,7 @@ body {
 .steps__image-box {
   height: 70vh;
   width: 100%;
-  background-image: url(../img/how-it-works-antenna.jpg);
+  background-image: linear-gradient(rgba(239, 239, 239, 0.3), rgba(239, 239, 239, 0.5)), url(../img/how-it-works-antenna.jpg);
   background-size: cover;
   background-position: top;
   background-size: 125%; }
@@ -482,9 +482,10 @@ body {
     display: table; }
 
 .steps__item-number {
-  float: left;
+  display: inline-block;
   height: 5.5rem;
   width: 5.5rem;
+  vertical-align: middle;
   border: solid 2px #8fc664;
   border-radius: 50%;
   padding: 5px;
@@ -497,7 +498,9 @@ body {
   background-clip: text; }
 
 .steps__item-text {
-  padding-left: 8rem;
+  display: inline-block;
+  width: 90%;
+  padding-left: 2rem;
   vertical-align: middle;
   letter-spacing: 1px;
   font-size: 2.5rem;
@@ -1024,7 +1027,7 @@ body {
   position: relative;
   height: calc(100vh - 6rem);
   padding: 1rem 2rem;
-  background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.7) 55%, transparent 50%), linear-gradient(105deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../img/hero-antenna-single.jpg);
+  background-image: linear-gradient(105deg, rgba(239, 239, 239, 0.7) 55%, transparent 50%), url(../img/hero-antenna-single.jpg);
   background-size: cover;
   background-position: bottom center; }
   @media only screen and (max-width: 56.25em) {

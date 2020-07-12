@@ -16,7 +16,7 @@
     &__image-box {
         height: 70vh;
         width: 100%;
-        background-image: url(../img/how-it-works-antenna.jpg);
+        background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna.jpg);
         background-size: cover;
         background-position: top;
         background-size: 125%;
@@ -29,10 +29,10 @@
         @include clearfix;
     }
     &__item-number {
-        float: left;
+        display: inline-block;
         height: 5.5rem;
         width: 5.5rem;
-        //margin: 0 2rem 2rem 0;
+        vertical-align: middle;
         border: solid 2px $color-secondary;
         border-radius: 50%;
         padding: 5px;
@@ -45,7 +45,9 @@
         background-clip: text;
     }
     &__item-text {
-        padding-left: 8rem;
+        display: inline-block;
+        width: 90%;
+        padding-left: 2rem;
         vertical-align: middle;
         letter-spacing: 1px;
         font-size: $parag-font-size;
