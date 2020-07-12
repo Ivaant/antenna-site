@@ -1,3 +1,7 @@
+//CURRENT YEAR RENDERING IN THE FOOTER
+var copyrightParag = document.querySelector(".footer__copyright-text");
+copyrightParag.insertAdjacentText('beforeend', new Date().getFullYear());
+
 //NAVIGATION HIDING AFTER CLICK
 var navCheckbox = document.querySelector(".navigation__checkbox");
 var navList = document.querySelector(".navigation__list");

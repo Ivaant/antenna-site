@@ -62,7 +62,7 @@ base + typography > layout + grid > pages + components
     }
     @if $breakpoint==small-phone {
         @media only screen and (max-width: 30em) {
-            //440px 
+            //480px 
             @content
         }
     }
