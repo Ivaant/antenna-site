@@ -32,7 +32,7 @@
         transition: all .5s .2s;
     }
     &__text {
-        margin-top: 7rem;
+        @include center-box;
     }
     &__close {
         &:link,
@@ -121,18 +121,8 @@
             transform: rotate(360deg);
         }
     }
-    &__mailto {
-        &:link,
-        &:visited {
-            font-size: $parag-font-size;
-            text-decoration: none;
-            color: $color-secondary-dark;
-        }
-        &:hover,
-        &:active {
-            font-size: $parag-font-size;
-            color: $color-secondary-dark;
-        }
+    &__email {
+        position: relative;
     }
     //OPEN STATE
     &:target {

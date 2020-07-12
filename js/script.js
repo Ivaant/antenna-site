@@ -156,7 +156,6 @@ popupFailElem.addEventListener("click", function(event) {
 
 //FOOTER PHONE NUMBER COPY TO CLIPBOARD ON CLICK
 var linkElems = document.querySelectorAll(".footer__link");
-console.log(linkElems);
 Array.from(linkElems).forEach(function(elem) {
     elem.addEventListener("click", function(event) {
         var textElem = document.createElement('textarea');
