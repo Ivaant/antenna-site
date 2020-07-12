@@ -211,21 +211,20 @@
                                     </div>
                                     <div class="form__group u-margin-bottom-medium">
                                         <div class="form__file-group">
-                                            <input type="file" class="form__file-input" id="file-input" name="jobdesc-file" accept=".txt, .doc, .docx, .rtf, .pdf, .html, .odt">
-                                            <label for="file-input" class="form__file-label btn btn--blue btn--small">
-                                               Upload File &ctdot;</label>
+
+                                            <input type="checkbox" class="form__textarea-checkbox" name="textarea-checkbox" id="textarea-checkbox">
+                                            <label for="textarea-checkbox" class="form__checkbox-label btn-text">
+                                                Describe vacancy &rarr;</label>
+                                            <textarea name="jobdesc" cols="30" rows="20" class="form__textarea" placeholder="Please, describe your vacancy here"></textarea>
                                         </div>
 
                                         <span class="form__text">or</span>
 
                                         <div class="form__file-group">
-
-                                            <input type="checkbox" class="form__textarea-checkbox" name="textarea-checkbox" id="textarea-checkbox">
-                                            <label for="textarea-checkbox" class="form__checkbox-label btn-text">
-                                                Describe vacancy &rarr;</label>
-                                            <textarea name="jobdesc" cols="30" rows="20" class="form__textarea" placeholder="Put down a job description here..."></textarea>
+                                            <input type="file" class="form__file-input" id="file-input" name="jobdesc-file" accept=".txt, .doc, .docx, .rtf, .pdf, .html, .odt">
+                                            <label for="file-input" class="form__file-label btn btn--blue btn--small">
+                                               Upload File &ctdot;</label>
                                         </div>
-                                        <div class="form__file-name"></div>
                                     </div>
                                     <div class="form__group">
                                         <button class="btn btn--blue-outline btn--submit" type="submit">Submit &uarr;</button>

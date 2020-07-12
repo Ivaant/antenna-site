@@ -579,10 +579,6 @@ body {
       width: 100%;
       margin: 2rem auto; } }
 
-.form__file-name {
-  padding: 1rem 3rem;
-  font-weight: 400; }
-
 .form__textarea-checkbox {
   display: none; }
 
