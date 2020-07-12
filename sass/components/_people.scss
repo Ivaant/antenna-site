@@ -20,12 +20,12 @@
         width: 100%;
         margin: 0;
         overflow: hidden;
-        background-color: #000;
+        background-color: #fff;
     }
     &__image {
         width: 100%;
         height: auto;
-        opacity: 0.7;
+        opacity: 0.3;
         transform: scale(1.15);
         transition: all 0.5s;
         &:hover {
@@ -38,12 +38,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $color-white;
-        font-weight: 500;
+        color: $color-secondary-dark;
+        font-weight: 900;
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: .5rem;
         opacity: 1;
         transition: all .5s;
     }

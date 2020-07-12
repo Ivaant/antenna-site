@@ -10,7 +10,7 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 2000;
+        z-index: 500;
         background-color: rgba($color-black, .8);
         opacity: 0;
         visibility: hidden;
@@ -22,8 +22,7 @@
         }
     }
     &__content {
-        position: relative;
-        z-index: 2100;
+        z-index: 800;
         width: 70%;
         height: 70%;
         padding: 5rem;
@@ -39,6 +38,10 @@
         transition: all .5s .2s;
     }
     &__text {
+        position: relative;
+        display: inline-block;
+        width: 45%;
+        margin: 7rem 0 0 33%;
         margin-top: 7rem;
         font-weight: 500;
     }
@@ -61,7 +64,7 @@
     }
     &__circle {
         @include center-box;
-        z-index: 3000;
+        //z-index: 900;
         //background-color: rgba($color-white, .7);
         border: 2px solid $color-secondary-dark;
         border-radius: 50%;
