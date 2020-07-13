@@ -1072,7 +1072,7 @@ body {
 .footer {
   padding: 2rem 0;
   background-color: #555;
-  font-size: 1.4rem; }
+  line-height: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       /*900px*/
@@ -1097,10 +1097,6 @@ body {
     color: #f7f7f7;
     letter-spacing: 1px;
     line-height: 3rem; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__contacts, .footer__copyright {
-        /*900px*/
-        text-align: center; } }
     .footer__contacts i, .footer__copyright i {
       margin: 2rem 1rem;
       vertical-align: middle;
@@ -1115,7 +1111,15 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__contacts {
         /*900px*/
-        float: none; } }
+        float: none;
+        width: 74%;
+        margin: 0 auto;
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contacts {
+        width: 100%;
+        line-height: 4rem;
+        font-size: 2.4rem; } }
   .footer__phone-number, .footer__email {
     margin-block-start: 0; }
   .footer__link::after {
@@ -1145,12 +1149,19 @@ body {
       content: 'Copied!'; }
   .footer__copyright {
     float: right;
-    text-align: right;
-    padding-right: 0; }
+    text-align: right; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         /*900px*/
-        float: none; } }
+        float: none;
+        width: 74%;
+        margin: 0 auto;
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__copyright {
+        width: 100%;
+        line-height: 4rem;
+        font-size: 2.4rem; } }
 
 .section-about {
   padding: 6rem 0; }
