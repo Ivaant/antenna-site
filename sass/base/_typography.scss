@@ -10,7 +10,6 @@
     backface-visibility: hidden;
     &--request {
         display: block;
-        margin-bottom: 5rem;
         -webkit-animation: moveInLeft 2s;
         animation: moveInLeft 2s;
         @include respond(tab-land) {
