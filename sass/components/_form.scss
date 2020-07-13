@@ -64,6 +64,12 @@
     &__file-input {
         display: none;
     }
+    &__file-name {
+        height: 3rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
     &__text {
         margin-right: 40px;
         font-weight: 400;
