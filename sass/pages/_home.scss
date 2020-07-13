@@ -34,6 +34,12 @@
     @include respond(tab-port) {
         background-image: linear-gradient(to right, rgba($color-white, .9), rgba($color-white, .9)), url(../img/golden-gate-bridge.jpg);
     }
+    @include respond(phone) {
+        background-image: linear-gradient(to right, rgba($color-white, .9), rgba($color-white, .9)), url(../img/golden-gate-bridge-phone.jpg);
+    }
+    @include respond(small-phone) {
+        background-image: linear-gradient(to right, rgba($color-white, .9), rgba($color-white, .9)), url(../img/golden-gate-bridge-small-phone.jpg);
+    }
     &__form {
         width: 95%;
         @include respond(tab-port) {

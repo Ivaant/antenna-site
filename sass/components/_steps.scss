@@ -16,10 +16,13 @@
     &__image-box {
         height: 70vh;
         width: 100%;
-        background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna.jpg);
+        background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna-tab-port.jpg);
         background-size: cover;
         background-position: top;
         background-size: 125%;
+        @include respond(phone) {
+            background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna-phone.jpg);
+        }
     }
     &__list {
         margin: 0 0 5rem 3%;

@@ -2,12 +2,21 @@
     position: relative;
     height: calc(100vh - 6rem);
     padding: 1rem 2rem;
-    background-image: linear-gradient( 105deg, rgba($color-white, .7) 55%, transparent 50%), url(../img/hero-antenna-single.jpg);
+    background-image: linear-gradient( 105deg, rgba($color-white, .7) 55%, transparent 50%), url(../img/hero-antenna-single-desktop.jpg);
     background-size: cover;
     background-position: bottom center;
+    @include respond(tab-land) {
+        background-image: linear-gradient( 105deg, rgba($color-white, .7) 55%, transparent 50%), url(../img/hero-antenna-single-tab-land.jpg);
+    }
     @include respond(tab-port) {
         height: 100vh;
-        background-image: linear-gradient( 105deg, rgba($color-white, .7), rgba($color-white, .7)), url(../img/hero-antenna-single.jpg);
+        background-image: linear-gradient( 105deg, rgba($color-white, .7), rgba($color-white, .7)), url(../img/hero-antenna-single-tab-port.jpg);
+    }
+    @include respond(phone) {
+        background-image: linear-gradient( 105deg, rgba($color-white, .7), rgba($color-white, .7)), url(../img/hero-antenna-single-phone.jpg);
+    }
+    @include respond(small-phone) {
+        background-image: linear-gradient( 105deg, rgba($color-white, .7), rgba($color-white, .7)), url(../img/hero-antenna-single-small-phone.jpg);
     }
     &__logo-box {
         width: 30rem;
