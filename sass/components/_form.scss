@@ -1,7 +1,7 @@
 .form {
     &__heading {
         @include respond(tab-land) {
-            text-align: center;
+            //text-align: center;
         }
     }
     &__group {
@@ -71,8 +71,9 @@
         text-align: center;
     }
     &__text {
-        margin-right: 40px;
-        font-weight: 400;
+        text-align: center;
+        display: inline-block;
+        width: 10%;
         @include respond(tab-port) {
             display: block;
             width: 100%;

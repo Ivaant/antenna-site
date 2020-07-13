@@ -148,6 +148,9 @@
         font-size: $default-font-size;
         color: $color-background-dark;
         transition: all .1s ease-in;
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
     &:hover {
         background-color: $color-background-dark;
