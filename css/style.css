@@ -506,6 +506,11 @@ body {
   background-image: linear-gradient(to right, #8fc664, #6da83e);
   -webkit-background-clip: text;
   background-clip: text; }
+  @media only screen and (max-width: 56.25em) {
+    .steps__item-number {
+      /*900px*/
+      display: block;
+      margin: 2rem auto; } }
 
 .steps__item-text {
   display: inline-block;

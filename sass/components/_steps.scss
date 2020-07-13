@@ -43,6 +43,10 @@
         background-image: linear-gradient(to right, $color-secondary, $color-secondary-dark);
         -webkit-background-clip: text;
         background-clip: text;
+        @include respond(tab-port) {
+            display: block;
+            margin: 2rem auto;
+        }
     }
     &__item-text {
         display: inline-block;
