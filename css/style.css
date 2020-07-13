@@ -453,6 +453,9 @@ body {
     letter-spacing: .5rem;
     opacity: 1;
     transition: all .5s; }
+    @media only screen and (max-width: 30em) {
+      .people__caption {
+        font-size: 3rem; } }
   .people__list-item:hover .people__caption {
     top: 100%;
     opacity: 0; }
