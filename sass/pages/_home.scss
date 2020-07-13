@@ -1,5 +1,8 @@
 .section-about {
     padding: 6rem 0;
+    .row:not(:last-child) {
+        margin-bottom: 5rem;
+    }
 }
 
 .section-people {

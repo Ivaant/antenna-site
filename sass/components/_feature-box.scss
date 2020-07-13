@@ -1,5 +1,5 @@
 .feature-box {
-    height: 45rem;
+    height: 38rem;
     padding: 2.5rem;
     background-image: linear-gradient(rgba($color-background-light, 1), rgba($color-primary-dark, 1));
     font-size: $default-font-size;
@@ -10,9 +10,17 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     opacity: 0;
     transition: all .2s;
+    @include respond(tab-land) {
+        font-size: 2rem;
+        height: 53rem;
+    }
     @include respond(tab-port) {
-        font-size: 2.5rem;
-        height: 40rem;
+        font-size: $parag-font-size;
+        height: 32rem;
+    }
+    @include respond(phone) {
+        font-size: 3rem;
+        height: 37rem;
     }
     &__icon {
         display: inline-block;

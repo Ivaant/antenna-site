@@ -361,7 +361,7 @@ body {
   transform: translateY(-1px); }
 
 .feature-box {
-  height: 45rem;
+  height: 38rem;
   padding: 2.5rem;
   background-image: linear-gradient(#0074b4, #1e366f);
   font-size: 1.8rem;
@@ -372,11 +372,19 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   opacity: 0;
   transition: all .2s; }
+  @media only screen and (max-width: 75em) {
+    .feature-box {
+      font-size: 2rem;
+      height: 53rem; } }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       /*900px*/
       font-size: 2.5rem;
-      height: 40rem; } }
+      height: 32rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .feature-box {
+      font-size: 3rem;
+      height: 37rem; } }
   .feature-box__icon {
     display: inline-block;
     color: transparent;
@@ -993,11 +1001,11 @@ body {
       /*900px*/
       max-width: 50rem; } }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         /*900px*/
-        margin-bottom: 6rem; } }
+        margin-bottom: 4rem; } }
   .row::after {
     content: "";
     clear: both;
@@ -1010,7 +1018,7 @@ body {
         .row [class^="col-"]:not(:last-child) {
           /*900px*/
           margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         /*900px*/
@@ -1139,6 +1147,8 @@ body {
 
 .section-about {
   padding: 6rem 0; }
+  .section-about .row:not(:last-child) {
+    margin-bottom: 5rem; }
 
 .section-people {
   padding: 10rem 0; }
