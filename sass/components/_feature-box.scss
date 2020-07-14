@@ -12,15 +12,15 @@
     transition: all .2s;
     @include respond(tab-land) {
         font-size: 2rem;
-        height: 53rem;
+        height: 58rem;
     }
     @include respond(tab-port) {
         font-size: $parag-font-size;
-        height: 32rem;
+        height: 38rem;
     }
     @include respond(phone) {
         font-size: 3rem;
-        height: 37rem;
+        height: 42rem;
     }
     &__icon {
         display: inline-block;
