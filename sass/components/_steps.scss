@@ -19,7 +19,7 @@
         background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna-tab-port.jpg);
         background-size: cover;
         background-position: top;
-        background-size: 125%;
+        background-repeat: no-repeat;
         @include respond(phone) {
             background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna-phone.jpg);
         }

@@ -14,7 +14,7 @@
         "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
         "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css",
 
-        "minify-js": "uglifyjs js/noframework.waypoints.min.js js/smtp.js js/script.js -o js/bundle.js -c -m",
+        "minify-js": "uglifyjs js/lazysizes.min.js js/noframework.waypoints.min.js js/smtp.js js/script.js -o js/bundle.js -c -m",
         "build-all": "npm run build-css && rm -f css/style.comp.css && rm -f css/style.concat.css && rm -f css/style.prefix.css && npm run minify-js"
     },
     "repository": {
