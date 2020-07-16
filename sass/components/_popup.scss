@@ -8,8 +8,9 @@
     right: 0;
     z-index: 3000;
     background-color: rgba($color-black, .8);
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
     transition: all .3s;
     @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(3px)) {
         -webkit-backdrop-filter: blur(5px);
@@ -28,7 +29,8 @@
         background-size: cover;
         background-position: top;
         transform: translate(-50%, -50%), scale(0);
-        opacity: 0;
+        // opacity: 0;
+        display: none;
         transition: all .5s .2s;
     }
     &__text {
@@ -57,11 +59,13 @@
     }
     //OPEN STATE
     &:target {
-        opacity: 1;
-        visibility: visible;
+        // opacity: 1;
+        // visibility: visible;
+        display: block;
     }
     &:target &__content {
-        opacity: 1;
+        // opacity: 1;
+        display: block;
         transform: translate(-50%, -50%), scale(1);
     }
 }
@@ -77,8 +81,9 @@
     right: 0;
     z-index: 3000;
     background-color: rgba($color-black, .8);
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
     transition: all .3s;
     @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(3px)) {
         -webkit-backdrop-filter: blur(5px);
@@ -97,7 +102,8 @@
         background-size: cover;
         background-position: top;
         transform: translate(-50%, -50%), scale(0);
-        opacity: 0;
+        //opacity: 0;
+        display: none;
         transition: all .5s .2s;
     }
     &__close {
@@ -127,11 +133,13 @@
     }
     //OPEN STATE
     &:target {
-        opacity: 1;
-        visibility: visible;
+        // opacity: 1;
+        // visibility: visible;
+        display: block;
     }
     &:target &__content {
-        opacity: 1;
+        //opacity: 1;
+        display: block;
         transform: translate(-50%, -50%), scale(1);
     }
 }
