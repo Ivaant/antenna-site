@@ -67,7 +67,7 @@ form.addEventListener("submit", function(event) {
             .then(function(result) {
                 Email.send({
                         SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
-                        To: 'yuriy.aushev@antenna-recruiting.com',
+                        To: 'project-lead@antenna-recruiting.com',
                         From: email.from,
                         Subject: email.subject,
                         Body: email.body,
@@ -94,7 +94,7 @@ form.addEventListener("submit", function(event) {
             });
     } else Email.send({
             SecureToken: "19a97c53-3b33-4261-bce0-354578209dbd",
-            To: 'yuriy.aushev@antenna-recruiting.com',
+            To: 'project-lead@antenna-recruiting.com',
             From: email.from,
             Subject: email.subject,
             Body: email.body
