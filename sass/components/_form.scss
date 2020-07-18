@@ -48,6 +48,12 @@
         font-weight: 400;
         transition: all .3s;
     }
+    &__checkbox-label {
+        font-size: 1.5rem;
+        @include respond(tab-port) {
+            font-size: $default-font-size;
+        }
+    }
     &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
@@ -116,8 +122,30 @@
             box-shadow: 0 2rem 3rem rgba($color-black, .3);
             border-bottom: solid 4px $color-primary;
         }
+        &-close-btn {
+            display: none;
+            position: absolute;
+            top: .5rem;
+            right: -2.5rem;
+            color: $color-black;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1;
+            text-decoration: none;
+            transition: all .2s;
+            &:hover,
+            &:active {
+                color: $color-primary;
+                font-weight: 300;
+                cursor: pointer;
+                transform: rotate(360deg);
+            }
+        }
     }
     &__textarea-checkbox:checked~&__textarea {
         display: block;
+    }
+    &__textarea-checkbox:checked~&__textarea-close-btn {
+        display: inline-block;
     }
 }

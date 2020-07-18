@@ -70,14 +70,22 @@
         margin-block-start: 0;
     }
     &__link {
+        a:link,
+        a:visited {
+            color: $color-grey-light-1;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color-secondary;
+        }
         &::after {
             content: 'Copy to Clipboard';
             display: none;
             position: absolute;
             z-index: 300;
             top: 1rem;
-            right: -4rem;
-            width: 114px;
+            right: -5rem;
+            width: 180px;
             height: 36px;
             color: #fff;
             font-size: 10px;

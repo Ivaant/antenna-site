@@ -1,23 +1,9 @@
 .steps {
     &__image-box {
-        width: 100%;
-        margin-right: 3%;
-        border-radius: 4px;
-        overflow: hidden;
-        text-align: right;
-        opacity: 0;
-        &--animated {
-            opacity: 1;
-            animation: moveInBottom .5s ease-out .5s;
-            -webkit-animation: moveInBottom .5s ease-out .5s;
-            animation-fill-mode: backwards;
-        }
-    }
-    &__image-box {
         height: 70vh;
         width: 100%;
         background-image: linear-gradient(rgba($color-white, .3), rgba($color-white, .5)), url(../img/how-it-works-antenna-tab-port.jpg);
-        background-size: cover;
+        background-size: 120%;
         background-position: top;
         background-repeat: no-repeat;
         @include respond(phone) {

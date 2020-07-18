@@ -22,15 +22,6 @@ var waypoint1 = new Waypoint({
     }
 });
 
-//section-steps steps__image-box moveInBottom
-var waypoint2 = new Waypoint({
-    element: document.querySelector(".section-steps"),
-    handler: function(direction) {
-        document.querySelector(".steps__image-box").classList.add("steps__image-box--animated");
-    },
-    offset: '150px;'
-});
-
 //SHOW SELECTED FILENAME BELOW THE UPLOAD FILE BTN
 var fileInput = document.querySelector(".form__file-input");
 var filenameLabel = document.querySelector(".form__file-name");
@@ -42,6 +33,12 @@ fileInput.addEventListener("change", function(event) {
     } else filenameLabel.textContent = "";
 });
 
+//TEXTAREA CLOSE BTN HANDLER
+var textCheckbox = document.querySelector(".form__textarea-checkbox");
+var textCloseBtn = document.querySelector(".form__textarea-close-btn");
+textCloseBtn.addEventListener("click", function(event) {
+    textCheckbox.checked = false;
+});
 
 //SEND FORM DATA via SMTPJS.COM
 var form = document.querySelector(".form");
