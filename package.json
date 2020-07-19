@@ -15,7 +15,8 @@
         "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css",
 
         "minify-js": "uglifyjs js/lazysizes.min.js js/noframework.waypoints.min.js js/smtp.js js/script.js -o js/bundle.js -c -m",
-        "build-all": "npm run build-css && rm -f css/style.comp.css && rm -f css/style.concat.css && rm -f css/style.prefix.css && npm run minify-js"
+        "build-all": "npm run build-css && rm -f css/style.comp.css && rm -f css/style.concat.css && rm -f css/style.prefix.css && npm run minify-js",
+        "prep-dist": "rm -rf dist/ && mkdir -p dist/{css,js} && cp index.html dist/ && cp css/style.css dist/css && cp js/bundle.js dist/js && cp -r ./{img,fonts} dist/"
     },
     "repository": {
         "type": "git",

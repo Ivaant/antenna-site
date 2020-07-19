@@ -133,6 +133,10 @@
             line-height: 1;
             text-decoration: none;
             transition: all .2s;
+            @include respond(tab-port) {
+                top: 35rem;
+                right: 1.5rem;
+            }
             &:hover,
             &:active {
                 color: $color-primary;

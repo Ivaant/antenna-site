@@ -1,5 +1,8 @@
 .people {
     width: 100%;
+    &__heading {
+        display: none;
+    }
     &__list {
         list-style: none;
         width: 100%;
